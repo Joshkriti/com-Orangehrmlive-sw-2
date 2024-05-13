@@ -32,9 +32,6 @@ public class ForgotPasswordTest extends BaseTest {
         String expectingText = "Reset Password";
         Assert.assertEquals("Print Reset Password: ",actualText,expectingText);
 
-
-
-
     }
 
     @After
