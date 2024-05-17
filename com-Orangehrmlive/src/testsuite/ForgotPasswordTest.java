@@ -23,10 +23,8 @@ public class ForgotPasswordTest extends BaseTest {
         * click on the ‘Forgot your password’ link
         * Verify the text ‘Reset Password’
      */
-        // can't click on forgot password link
-        driver.findElement(By.linkText("Forgot your password?")).click();
 
-        driver.findElement(By.className("oxd-text oxd-text--p orangehrm-login-forgot-header")).click();
+        driver.findElement(By.xpath("//div[contains(@class,'orangehrm-login-forgot')]/p[1]")).click();
 
         String actualText = driver.findElement(By.xpath("//div[@class='orangehrm-card-container']/form[1]/h6[1]")).getText();
         String expectingText = "Reset Password";
